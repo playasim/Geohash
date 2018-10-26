@@ -5,11 +5,9 @@ package com.wayz.ai.Util;
  * @Date 2018/10/19
  **/
 public class GeoUtil {
-
-    final static
-    char[] dict = {'0','1','2','3','4','5','6','7','8','9','b','c','d','e','f','g','h','j','k','m','n','p','q','r',
+    final static char[] dict =
+            {'0','1','2','3','4','5','6','7','8','9','b','c','d','e','f','g','h','j','k','m','n','p','q','r',
     's','t','u','v','w','x','y','z'};
-
     /*
     lat [-90,90]
     lon [-180,180]
@@ -18,7 +16,6 @@ public class GeoUtil {
         String latstr = getLatfromCoor2Binary(lat);
         String lonstr = getLonfromCoor2Binary(lon);
         String binary = combineLatLon(latstr, lonstr);
-
         String result = convertBinary2Str(binary);
         return result;
     }
